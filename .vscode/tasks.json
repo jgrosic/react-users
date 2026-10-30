@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Vite Server",
+			"type": "npm",
+			"script": "dev",
+			"path": "users-directory",
+			"isBackground": true,
+			"problemMatcher": {
+				"owner": "typescript",
+				"fileLocation": "relative",
+				"pattern": {
+					"regexp": "^$"
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": ".*",
+					"endsPattern": ".*(ready in|Local:).*"
+				}
+			}
+		},
+		{
+			"label": "Build users-directory app",
+			"type": "npm",
+			"script": "build",
+			"path": "users-directory",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "tsc -b && vite build"
+		}
+	]
+}
