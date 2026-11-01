@@ -7,6 +7,7 @@ import './App.css'
 // app entry point
 
 function App() {
+
   const [count, setCount] = useState<number>(0)
 
   return (
@@ -21,9 +22,9 @@ function App() {
         <div>
           <h1>Users directory</h1>
           <h2>Learning concepts by prototyping an app</h2>
-          <p>
-          </p>
+          <p></p>
         </div>
+
         <button
           type="button"
           className="counter"
