@@ -26,8 +26,9 @@
                 "vscode-webview:///**", // skip vscode scripts
                 "chrome-extension:///**", // skip chrome extensions
                 "extension:///**", // skip extension altogether
-                "**/proxy.js"
-            ],
+                "**/proxy.js",
+                "**/installHook.js"
+            ]
         }
     ]
 }
